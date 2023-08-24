@@ -1,0 +1,1 @@
+C:/Users/Nitro/Desktop/diab/diabetics/diabetic/dib.csv

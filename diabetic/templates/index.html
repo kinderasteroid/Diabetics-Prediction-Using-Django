@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function checkk(){
+      if(document.getElementById("Pregnency")||document.getElementById("dpf").value==""||document.getElementById("glucose").value==""||document.getElementById("insulin").value==""||document.getElementById("bloodpreasure").value==""||document.getElementById("bmi").value==""||document.getElementById("age").value==""||document.getElementById("skinthick").value=="")
+      {
+        
+      document.getElementById("myform").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+      alert("Please Enter All values correctly+")
+  // Additional code you want to execute when the form is not submitted
+});
+
+
+      }
+}
+  </script>
+    <style>
+        body{
+            background: linear-gradient(90deg,#9f3cdc 20%, #2f16ef);
+            min-height: 1300pt;
+            
+        }
+        .container{
+            background: rgba(0, 0, 0,0.3);
+            
+            position: absolute;
+            top: -10px;
+            
+            height: 90px;
+            min-width: 1447px;
+        }
+        .container img{
+            position: absolute;
+            height: 90px;
+
+            
+        }
+        #navbarNav a{
+            text-decoration: None;
+            color: white;
+            position: relative;
+            left:650px;
+            top:30px;
+            font-family: Georgia;
+           
+        }
+        #ah:hover{
+            color: rgb(247, 170, 3);
+            
+            transition: 0.3;
+        }
+        #aa:hover{
+            color: rgb(247, 170, 3);
+            
+            transition: 0.3;
+        }
+        .body{
+
+        }
+      
+        #image{
+            position: absolute;
+            width: 600px;
+            height: 500px;
+            left: 450px;
+            top:150px;
+        }
+    </style>   `
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  
+    <div class="container" >
+        <img src="{% static 'pngtree-blood-logo-vector-icon-illustration-design-png-image_4726522.png' %}" alt="">
+        <div id="navbarNav" style="position: sticky;">
+            <a href="" id="ah">Home</a> &emsp; &emsp;
+            <a href="" id="aa">About</a>
+          </div>
+    <div class="body">
+        <div class="textcont" style="color: white;font:Ariel; position: absolute; top:200px;">
+            <h6 style=" font-size: 23px;font-family: 'Audiowide', sans-serif;">DIABETIC PREDICIION SITE<h6>
+                <p style="font-family: 'Audiowide', sans-serif;">This Site uses the Support Vector Machine Model <br> in order to predict If the Person is Diabetic or not <br>
+                    
+                </p> <br>
+                <div style="width: 28%;font-family: 'Audiowide', sans-serif;">Diabetes is a chronic medical condition characterized by abnormal levels of glucose (sugar) in the blood. There are different types of diabetes, with the most common being Type 1 and Type 2 diabetes. In Type 1 diabetes, the immune system mistakenly attacks and destroys the insulin-producing cells in the pancreas, leading to a deficiency of insulin, a hormone necessary for regulating blood sugar.
+
+                </div>
+                
+        </div>
+        <img src="{% static 'Comics Font Generator.png' %}" alt="" id="image">
+       
+        <img src="{% static 'Screenshot 2023-08-19 150647.png' %}" alt="" style="position: absolute;width:340px;height: 500px; left: 1100px;top: 100px;">
+        <a href="#sec2"><button type="button" class="btn btn-warning" style="position:absolute;left: 650px;top:500px;">Click Here To Check !</button></a>
+       <div style="position: absolute;background-color: black;top:665px;height: 10px;width: 1446px;left: 0;"></div>
+        
+            
+    </div>
+    </div>
+
+<!--------------------------------- NEXT SECTION OF PAGEE----------------------------------------------------------------------->
+
+    <img id="sec2" src=" {% static 'Untitled.png' %}" style="width:230px;position: absolute; top:620px;left: 600px;" alt="">
+
+    <div class="inputdata" style="position: absolute;top:800px;color: aliceblue;background-color: rgba(0, 0, 0,0.3);width: 800px;height: 800px;left: 300px;padding-left: 200px; padding-top: 40px; border-radius: 20px;">
+        <form class="pp" method="get" id ="myform">
+          
+         
+
+            <div class="d-block text-white">
+            <div class="col-md-9" >
+              <label for="Pregnency" class="form-label">Pregnency</label>
+              <input type="text" class="form-control" id="Pregnency"  placeholder="Value" name="Pregnency" >
+            </div>
+            <div class="col-md-9">
+              <label for="glucose" class="form-label">Glucose</label>
+              <input type="text" class="form-control" id="glucose" placeholder="Value" name="Glucose">
+            </div>
+            <div class="col-md-9">
+              <label for="bloodpresure" class="form-label">Blood Presure</label>
+              <input type="text" class="form-control" id="bloodpresure" placeholder="Value" name="BP" >
+            </div>
+            <div class="col-md-9">
+              <label for="skinthick" class="form-label">Skin Thickness</label>
+              <input type="text" class="form-control" id="skinthick" placeholder="Value" name="ST" >
+            </div>
+            <div class="col-md-9">
+              <label for="insulin" class="form-label">Insulin</label>
+              <input type="text" class="form-control" id="insulin"  placeholder="Value" name="Insulin" >
+            </div>
+            <div class="col-md-9">
+              <label for="bmi" class="form-label">BMI</label>
+              <input id="bmi" type="text" class="form-control"  placeholder="Value" name="BMI" >
+                
+            </div>
+            <div class="col-md-9">
+              <label for="dpf" class="form-label">Diabetics Predigree Function</label>
+              <input type="text" class="form-control" id="dpf" placeholder="Value" name="DPF" > 
+            </div>
+            <div class="col-md-9">
+              <label for="age" class="form-label">Age</label>
+              <input type="text" class="form-control" id="age" placeholder="Value" name="Age" >
+            </div>
+            <button type="submit" class="btn btn-success" style="width: 100px;position: absolute;left: 350px;top:650px" onclick="checkk()">Submit</button>
+            </div>
+           
+        </div>
+        
+        {% if res == 0 %}
+        <div style="color: green;top: 1510px;position: absolute;left: 580px;">
+          Person is Not Diabetic,Congragulations
+        </div>
+        {% elif res == 1 %}
+
+        <div style="color: red;top: 1510px;position: absolute;left: 580px;">
+          Person is Diabetic,Please Take Measures
+        </div>
+        {% else %}
+        <div></div>
+        {% endif %} 
+        
+        
+
+            
+          </form>
+          <div style="position: absolute;background-color: black;top:1665px;height: 10px;width: 1446px;left: 0;"></div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
