@@ -36,7 +36,7 @@ py manage.py runserver
 
 ### 4.Hence The Webserver Should Run at http://127.0.0.1:8000/, Go to Your Browser and Enter the IP and Appliction Should be Visible like Below
 
-![Tux, the Linux mascot](sss.png)
+![Tux, the Linux mascot](/sss.png)
 
 
 do contact @kinderasteroid for Help,Support,Assistance
