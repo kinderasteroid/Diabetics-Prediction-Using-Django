@@ -1,0 +1,50 @@
+body{
+    background: linear-gradient(90deg,#9f3cdc 20%, #2f16ef);
+    min-height: 1300pt;
+    
+}
+.container{
+    background: rgba(0, 0, 0,0.3);
+    
+    position: absolute;
+    top: -10px;
+    
+    height: 90px;
+    min-width: 1447px;
+}
+.container img{
+    position: absolute;
+    height: 90px;
+
+    
+}
+#navbarNav a{
+    text-decoration: None;
+    color: white;
+    position: relative;
+    left:650px;
+    top:30px;
+    font-family: Georgia;
+   
+}
+#ah:hover{
+    color: rgb(247, 170, 3);
+    
+    transition: 0.3;
+}
+#aa:hover{
+    color: rgb(247, 170, 3);
+    
+    transition: 0.3;
+}
+.body{
+
+}
+
+#image{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    left: 450px;
+    top:150px;
+}
