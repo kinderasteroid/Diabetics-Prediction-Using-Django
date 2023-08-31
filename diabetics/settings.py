@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ghkm!aloe+h=sb((kdytqa#a#=2er7vbyfu0-m3cu1_!)!m492
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
